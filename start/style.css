@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+/* clear all style */
+body {
+  padding: 0;
+  margin: 0;
+}
+ul,
+a,
+h1,
+p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-decoration: none;
+  color: #bbb;
+  font-family: "Josefin Sans";
+}
+
+/* Navigation Bar Styling */
+nav {
+  background-color: #243646;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  height: 60px;
+  width: 100vw;
+}
+
+/* Navbar Logo */
+.logo a {
+  margin-left: 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+/* Navbar link */
+nav > ul {
+  display: flex;
+  gap: 15px;
+  flex-grow: 1;
+}
+ul a {
+  transition: 0.3s linear;
+}
+ul a:hover {
+  color: #fff;
+  text-decoration: underline solid 2px #fff;
+}
+
+/* Active page link style */
+.active {
+  color: #fff;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown a {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+  max-height: 20px;
+}
+
+/* Dropdown menu */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  background-color: #2b2e35;
+  padding: 20px;
+  position: absolute;
+  width: 150px;
+  display: none;
+}
+.dropdown-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Disabled link */
+.disabled {
+  color: #777;
+  cursor: default;
+}
+.disabled:hover {
+  color: #777;
+  text-decoration: none;
+}
+
+/* Search bar */
+form {
+  margin: 0 20px 0 auto;
+  display: flex;
+  gap: 5px;
+}
+input {
+  height: 45px;
+  padding: 15px;
+  border-radius: 7px;
+  border: 2px solid #777;
+  font-family: "Josefin Sans";
+  font-size: 20px;
+}
+button {
+  background-color: transparent;
+  color: #27c219;
+  height: 45px;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 2px solid #27c219;
+  font-family: "Josefin Sans";
+  font-size: 20px;
+}
+button:hover {
+  background-color: #27c219;
+  color: #000000;
+}
