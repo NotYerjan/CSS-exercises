@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap");
+
+/* clear all style */
+ul,
+a,
+h1,
+p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+/* Card body*/
+article {
+  font-family: "Josefin Sans", sans-serif;
+  width: 400px;
+  border: 1px solid #b1b1b1;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* sections style */
+img {
+  width: 100%;
+}
+section {
+  border-top: 1px solid #b1b1b1;
+}
+
+/* Card main */
+.main {
+  padding: 20px;
+}
+.main h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* Card items list */
+.items li {
+  border-top: 1px solid #b1b1b1;
+  padding: 10px 20px;
+}
+.items li:first-of-type {
+  border-top: none;
+}
+
+/* Card links */
+.links {
+  padding: 10px 20px;
+}
+.links ul {
+  display: flex;
+  gap: 20px;
+}
+a {
+  color: blue;
+}
