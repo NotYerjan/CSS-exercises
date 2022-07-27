@@ -1,4 +1,7 @@
+/* Google fonts import */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap");
+
+/* Google icons import */
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 /* clear all style */
@@ -19,6 +22,12 @@ p {
   font-family: "Josefin Sans";
 }
 
+/* Icons settings */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: #fff;
+}
+
 /* Navigation Bar Styling */
 nav {
   background-color: #243646;
@@ -27,6 +36,10 @@ nav {
   gap: 25px;
   height: 60px;
   width: 100vw;
+}
+
+.hamburger-menu {
+  display: none;
 }
 
 /* Navbar Logo */
@@ -64,10 +77,6 @@ ul a:hover {
 .dropdown a {
   display: flex;
   flex-wrap: nowrap;
-}
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
-  max-height: 20px;
 }
 
 /* Dropdown menu */
@@ -124,4 +133,18 @@ button {
 button:hover {
   background-color: #27c219;
   color: #000000;
+}
+
+@media (max-width: 936px) {
+  .menu,
+  form {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
+  }
 }
