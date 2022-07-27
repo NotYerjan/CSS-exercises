@@ -1,0 +1,124 @@
+/* Adding google font */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Adding google icons */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.material-icons {
+  color: #555555;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+/* Clear default settings */
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+}
+p,
+h1,
+span {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: Jost;
+  font-weight: 400;
+}
+strong {
+  font-weight: 700;
+}
+
+/* Main page */
+.main-page {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.card-articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  width: 350px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* header */
+.card header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.card-info {
+  display: flex;
+  flex-grow: 1;
+  gap: 10px;
+}
+.user-image {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.author-info {
+  flex-grow: 1;
+}
+.user-name {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.post-date {
+  color: #464646;
+  font-weight: 300;
+}
+.more:hover {
+  color: #000;
+  scale: 120%;
+}
+
+/* main */
+.card-image {
+  width: 100%;
+}
+.card-action {
+  margin-left: 10px;
+}
+.like-icon:hover {
+  color: #b83939;
+  scale: 120%;
+}
+.comment-icon:hover {
+  color: #1c31a8;
+  scale: 120%;
+}
+
+/* footer */
+footer {
+  padding: 0 10px 10px;
+}
+.comment {
+  text-align: justify;
+}
+
+/* medaia queries */
+@media (max-width: 1145px) {
+  .card {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+@media (max-width: 759px) {
+  .card {
+    width: 100%;
+  }
+}
