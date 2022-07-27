@@ -1,0 +1,20 @@
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.result {
+  grid-column: span 4;
+}
+
+.operators {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.numbers {
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
